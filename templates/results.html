@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Diabetes Predictor</title>
+
+	</head>
+
+    <br>
+
+<div class="results">
+		<h1 class="heading">Diabetes Predictor</h1>
+
+			{% if Prediction==1 %}
+				<h1 class="diab">Prediction: <span class='danger'>Oops! You have DIABETES.</span></h1>
+<!--					<img src="https://media4.giphy.com/media/ULHGmC04GFEPK/giphy.gif" alt="this slowpoke moves"/>-->
+	<img  src="https://media4.giphy.com/media/1k1ytTA4AHJnp7OvUJ/giphy.gif"></div></br>
+	<img  src="https://media.giphy.com/media/l49F7YtavoXVYAzC0/giphy.gif">
+			{% elif Prediction==0 %}
+				<h1 class="nodiab">Prediction: <span class='safe'>Great! You DON'T have diabetes.</span></h1>
+			<img src="https://media0.giphy.com/media/TGQyLdzYv90FjplXkr/giphy.gif" alt="this slowpoke moves"  />
+			<img src="https://media.giphy.com/media/VJfZ1qYFbYv6lTL042/giphy.gif" alt="this slowpoke moves"  />
+			
+			{% endif %}
+		</div>
+
+
+	</body>
+<style>
+	body{
+	  background-color:black;
+	  }
+
+h1{
+	color:white;
+	text-align:center
+
+	}
+
+div.results{
+ margin: auto;
+  padding: 2px;
+}
+img{
+  display:flex;
+  margin-left: 100px;
+  width: 40%;
+  float:left;
+
+}
+.diab{
+color:red;
+}
+.nodiab{
+color:green
+}
+</style>
+</html>
